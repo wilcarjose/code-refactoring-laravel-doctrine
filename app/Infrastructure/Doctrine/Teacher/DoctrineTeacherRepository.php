@@ -1,8 +1,8 @@
 <?php
-namespace App\Infrastructure\Teacher;
+namespace App\Infrastructure\Doctrine\Teacher;
 
 use App\Domain\Teacher\TeacherRepository;
-use App\Infrastructure\DoctrineBaseRepository;
+use App\Infrastructure\Doctrine\DoctrineBaseRepository;
 
 class DoctrineTeacherRepository extends DoctrineBaseRepository implements TeacherRepository 
 {

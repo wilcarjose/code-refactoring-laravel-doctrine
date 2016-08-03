@@ -29,7 +29,9 @@ class TeacherRepositoryTest extends TestCase
 
     	self::$teacher = $this->repository->save($teacher);
 
-        $this->seeInDatabase('teachers',['id'=>self::$teacher->getId()]);
+        $this->assertInstanceOf(Teacher::class,
+                                $this->repository->find(self::$teacher->getId())
+                            );
     }
 
     public function testUpdateAndSave()

@@ -1,5 +1,5 @@
 <?php
-namespace App\Infrastructure;
+namespace App\Infrastructure\Doctrine;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\Common\Util\Inflector;
